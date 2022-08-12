@@ -1,0 +1,169 @@
+@import "header";
+@import "variable";
+@import "mixin";
+@import "fonts";
+
+* { /* selector universal */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+
+
+
+#intro {
+    height: 500px;
+    background-image: url(../img/intro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px;
+}
+
+#intro .intro__titulo {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+}
+
+#intro .intro__subtitulo {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* AQUI VAN LAS SECCIONES DE LAS PÁGINAS */
+main {
+    width: 100%;
+}
+
+.secciones {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.seccionNovedades {
+    padding: 20px;
+    margin: 20px;
+    background-color: burlywood;
+    border-radius: 15px;
+    flex-grow: 2;
+}
+
+.seccionNovedades__titulo {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 0;
+    background-color: tomato;
+    border-radius: 15px;
+}
+
+.seccionNovedades__texto {
+    text-align: justify;
+    margin: 20px auto;
+}
+
+.seccionLoMasPedido {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border: 1px dotted orangered;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.seccionLoMasPedido__producto {
+    background-color: burlywood;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.seccionLoMasPedido__titulo {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 0;
+    background-color: tomato;
+    border-radius: 15px;
+    font-style: oblique;
+}
+
+.seccionLoMasPedido__imagen {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.seccionLoMasPedido__texto {
+    text-align: justify;
+    margin: 20px auto;
+    padding: 10px;
+    line-height: 1.8;
+}
+
+.piePagina {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.piePagina__mapaDelSitio {
+    display: flex;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+}
+
+.piePagina__contenedorFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.piePagina__contenedorFooter--menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.piePagina__contenedorFooter--menu ul li a:hover {
+    text-decoration: none;
+    color: orangered;
+}
+
+.piePagina__contenedorRedes--linkRedes{
+    border-radius: 100%;
+}
+
+.piePagina__contenedorRedes--linkRedes .redes {
+    background: white;
+    border-radius: 100%;
+    border: black 1px solid;
+    height: 35px;
+    width: auto;
+    margin: 0 15px;
+    padding: 0;
+    opacity: 0.5;
+}
+
+a .redes:hover {
+    opacity: 1;
+}
+
+.piePagina__copy {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+}
